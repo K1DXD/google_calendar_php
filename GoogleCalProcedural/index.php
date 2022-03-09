@@ -1,9 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../apiAccess.php';
-require_once './functins_google_api.php';
-require_once './functions.php';
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../apiAccess.php';
+require './functions_display.php';
+require './functins_google_api.php';
+require './functions.php';
 session_start();
 
 $client = createClient();

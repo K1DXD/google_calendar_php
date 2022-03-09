@@ -67,7 +67,8 @@ function getCalendarList($client) {
 	return createCalendar($client)->calendarList->listCalendarList();
 }
 
-function getCalendar($client, $id) {
+function getCalendar($id) {
+	global $client;
 	return createCalendar($client)->calendars->get($id);
 }
 
